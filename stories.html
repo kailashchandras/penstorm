@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="MXPlayer, mxplayer.in">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/mxplayer-line-on-blue-rgb-522x133.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/mx-player-icon.png" type="image/x-icon">
   <meta name="description" content="Web Builder Description">
   
   <title>Stories</title>
@@ -68,33 +68,17 @@
     
 
     
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4591811089663!2d72.81726711440879!3d19.043538487106535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c945f2fb1149%3A0xa2ba742a39963b31!2sTaj+Lands+End%2C+Mumbai!5e0!3m2!1sen!2sin!4v1554290971826!5m2!1sen!2sin" allowfullscreen=""></iframe></div>
-            </div>
+    <div class="container" >
+        <div class="row  justify-content-center">
+            
             <div class="col-md-6">
                 <h2 class="pb-3 align-left mbr-fonts-style display-2">
-                    Drop your idea here
+                    Submit your pitch
                 </h2>
-                <div>
-                    <div class="icon-block pb-3 align-left">
-                        <span class="icon-block__icon">
-                            <span class="mbri-letter mbr-iconfont"></span>
-                        </span>
-                        <h4 class="icon-block__title align-left mbr-fonts-style display-5">
-                            Do write us on
-                        </h4>
-                    </div>
-                    <div class="icon-contacts pb-3">
-                        <p class="mbr-text align-left mbr-fonts-style display-7">
-                            Email: penstorm@mxplayer.in
-                        </p>
-                    </div>
-                </div>
+
                 <div data-form-type="formoid">
                     <!---Formbuilder Form--->
-                    <form action="https://fkuj91ua8j.execute-api.ap-south-1.amazonaws.com/dev" method="POST" class="mbr-form form-with-styler">
+                    <form action="https://4j9h48h4sh.execute-api.ap-south-1.amazonaws.com/prod" method="POST" class="mbr-form form-with-styler" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
                         <div class="row">
                             
                             <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
@@ -105,11 +89,18 @@
                                 <input type="text" name="name" placeholder="Your Name" data-form-field="Name" required="required" class="form-control input display-7" id="name-form4-5">
                             </div>
                             <div class="col-md-6  form-group" data-for="phone">
-                                <input type="text" name="phone" placeholder="Phone" data-form-field="Phone" required="required" class="form-control input display-7" id="phone-form4-5">
+                                <input type="text" name="phone" placeholder="Phone"  data-form-field="Phone" required="required" class="form-control input display-7" id="phone-form4-6">
                             </div>
                             <div data-for="email" class="col-md-12  form-group">
-                                <input type="text" name="email" placeholder="Email" data-form-field="Email" class="form-control input display-7" required="required" id="email-form4-5">
+                                <input type="text" name="email" placeholder="Email" data-form-field="Email" class="form-control input display-7" required="required" id="email-form4-7">
                             </div>
+
+                            <div class="col-md-12  form-group" data-for="companyname">
+                                <input type="text" name="companyname" placeholder="Company Name" data-form-field="companyname" required="required" class="form-control input display-7" id="phone-form4-8">
+                            </div>
+
+                            
+
                             <div class="container">
                                 <div class="row">
                                   <div class="col-md-12  form-group">
@@ -119,8 +110,8 @@
                                     </select>
                                   </div>
                                 </div>
-                        </div>
-                        <div class="container">
+                            </div>
+                            <div class="container">
                                 <div class="row">
                                   <div class="col-md-12  form-group">
                                     <select class="form-control">
@@ -143,14 +134,21 @@
                                       <option value="Talk Show">Talk Show</option>
                                       <option value="Game Show">Game Show</option>
                                       <option value="Documentary">Documentary</option>
+                                      <option value="Others">Others</option>
                                     </select>
                                   </div>
                                 </div>
                         </div>
+                        <div data-for="projecttitle" class="col-md-12  form-group">
+                            <input type="text" name="projecttitle" placeholder="Project Title" data-form-field="projecttitle" required="required" class="form-control input display-7" id="phone-form4-9">
+                      </div>
                             <div data-for="message" class="col-md-12  form-group">
-                                <textarea name="message" placeholder="Your idea in less then 250 words!" maxlength="3250" data-form-field="Message" class="form-control input display-7" id="message-form4-5"></textarea>
+                                <textarea name="message" placeholder="Idea Synopsis (word limit 250 words)" maxlength="3500" data-form-field="Message" class="form-control input display-7" id="message-form4-5"></textarea>
                             </div>
-                            <div class="col-md-12 input-group-btn  mt-2 align-center"><button type="submit" class="btn btn-primary btn-form display-4" href="https://fkuj91ua8j.execute-api.ap-south-1.amazonaws.com/dev">SEND MESSAGE</button></div>
+                            <div data-for="tnc" class="col-md-12  form-group">
+                            <label class="checkbox-inline"><p class="mbr-text align-left mbr-fonts-style display-7"> <input type="checkbox" value="yes" id="agree">   I agree to Term and Condition</label></p>
+                        </div>
+                            <div class="col-md-12 input-group-btn  mt-2 align-center"><button type="submit" class="btn btn-primary btn-form display-4" href="https://fkuj91ua8j.execute-api.ap-south-1.amazonaws.com/dev">SUBMIT</button></div>
                         </div>
                     </form><!---Formbuilder Form--->
                 </div>
