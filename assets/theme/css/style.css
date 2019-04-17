@@ -447,6 +447,9 @@ nav .mbr-section-btn {
   display: -webkit-flex;
   -webkit-flex-wrap: wrap; }
 
+  .justify-content-bottom-center {
+    -webkit-justify-content: bottom; }
+
 .justify-content-center {
   -webkit-justify-content: center; }
 
