@@ -75,6 +75,9 @@ section {
   z-index: 20; }
 
 /*! Base colors */
+.mbr-gray {
+  color: rgb(65, 142, 237); }
+
 .mbr-white {
   color: #ffffff; }
 

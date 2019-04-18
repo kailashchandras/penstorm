@@ -63,6 +63,15 @@ body {
 .display-7 > .mbr-iconfont {
   font-size: 1.6rem;
 }
+
+.display-8 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.3rem;
+}
+.display-8 > .mbr-iconfont {
+  font-size: 2.3rem;
+}
+
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
 /* 100vw - current viewport width */
@@ -177,8 +186,8 @@ body {
 }
 .btn-secondary,
 .btn-secondary:active {
-  background-color: #FCCA31 !important;
-  border-color: #f7f7f7 !important;
+  background-color: #ff3366 !important;
+  border-color: #82786e !important;
   color: #ffffff !important;
 }
 .btn-secondary:hover,
@@ -186,7 +195,7 @@ body {
 .btn-secondary.focus,
 .btn-secondary.active {
   color: #ffffff !important;
-  background-color: rgba(252, 201, 49, 0.801) !important;
+  background-color: #ff3366 !important;
   border-color: #f7f7f7 !important;
 }
 .btn-secondary.disabled,
@@ -1460,7 +1469,7 @@ body {
   margin-bottom: 3px;
 }
 .cid-rmmKMZo8oQ .carousel-caption {
-  top: 80%;
+  top: 60%;
   right: 0;
   bottom: auto;
   left: 0;
@@ -1652,6 +1661,13 @@ body {
 .cid-rmzmhMvlun .mbr-section-btn {
   color: #232323;
 }
+
+.cid-rmzOUzyCI8 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+
 .cid-rmzOUzyCI7 {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -1791,7 +1807,7 @@ body {
 }
 .cid-rmKBxPnmuR .navbar {
   padding: .5rem 0;
-  background: #000000a4;
+  background: rgba(65, 142, 237, 1);
   transition: none;
   min-height: 77px;
 }
